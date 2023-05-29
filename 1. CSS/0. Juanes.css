@@ -876,3 +876,108 @@ footer .container .sec p {
         margin: 0 auto;
     }
 }
+
+/* Sobre Nosotros - Sexta Parte - Valores */
+
+#tituloSobreNosotrosValores {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+.explicacionValores .contenedorexplicacionValores {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    padding: 60px 0px
+
+}
+
+.explicacionValores .contenedorexplicacionValores .box figure img {
+    width: 500px;
+    border-radius: 15px;
+
+}
+
+.explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores {
+    text-align: justify;
+
+}
+
+.explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores h2{
+    color: var(--main-color);
+}
+
+
+.explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores p {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    
+}
+
+.explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores h2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .explicacionValores .contenedorexplicacionValores .box .textoExplicacionValores p {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-weight: 400;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+    }
+    
+    .explicacionValores .contenedorexplicacionValores {
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 50px;
+        padding: 60px 0px
+
+    }
+
+    .explicacionValores .contenedorexplicacionValores .box figure img {
+        width: 400px;
+        border-radius: 15px;
+        border-radius: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+#finalTituloSobreNostros {
+    font-size: 7em;
+    color: var(--main-color);
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #finalTituloSobreNostros {
+        font-size: 4em;
+    }
+}

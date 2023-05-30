@@ -1118,3 +1118,11 @@ footer .container .sec p {
 
 }
 
+/* Servicios - Septima Parte - ExplicaciónServicios */
+
+#tituloServicios {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 7em;
+
+}

@@ -16,7 +16,7 @@ var apellidosContactenos = document.getElementById("lname");
 var correoContactenos = document.getElementById("correo");
 var razonContactenos = document.getElementById("razonContacto");
 var errorContactenos = document.getElementById("errorContactenos");
-errorContactenos.style.color = "#23518";
+errorContactenos.style.color = "black";
 
 
 function enviarContactenos () {
@@ -24,7 +24,23 @@ function enviarContactenos () {
 
     var mensajesError = [];
 
-    if ();
+    if (fname.value === null || fname.value === ""){
+        mensajesError.push("Ingresa tu nombre");
+    }
+
+    if (lname.value === null || lname.value === ""){
+        mensajesError.push("Ingresa tu apellido");
+    }
+
+    if (correo.value === null || correo.value === ""){
+        mensajesError.push("Ingresa un correo para contactarnos");
+    }
+
+    if (razonContacto.value === null || razonContacto.value === ""){
+        mensajesError.push("Ingresa la razon");
+    }
+
+    errorContactenos.innerHTML = mensajesError.join(" - ");
 
     return false;
 

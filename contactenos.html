@@ -81,23 +81,28 @@
 
                     <div class="cuerpoForContactenos">
 
+                        <h1>Formulario</h1><br>
                         <p>Si desea conctarse con nosotros para saber mas de STEL llene el formulario y recibira una respuesta de nuestra parte.</p><br>
                         
                         <form action="" class="Contactenos">
 
-                            <label for="fname">Nombre: </label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="lname">Apellido: </label><br>
-                            <input type="text" id="lname" name="lname"><br>
-                            <label for="correo">Correo: </label><br>
-                            <input type="text" id="correo" name="correo"><br>
-                            <br>
+                            <p>Ingresa tu nombre: </p>
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="fname" maxlength="40">
+                            <p>Ingresa tu apellido: </p>
+                            <label for="lname"></label>
+                            <input type="text" id="lname" name="lname" maxlength="60">
+                            <p>Ingresa tu correo: </p>
+                            <label for="correo"></label>
+                            <input type="text" id="correo" name="correo" maxlength="60"><br><br><br>
                             <p>Razon por la cual desea contactarnos:</p>
-                            <label for="correo">Razon: </label><br>
-                            <input type="text" id="razonContacto" name="razonContacto"><br>
-                            <input type="submit" onclick="return enviarContactenos()" value="Enviar">
+                            <label for="correo"></label>
+                            <textarea name="razonContacto" id="razonContacto" cols="30" rows="10" maxlength="700"></textarea>
+                            <input type="submit" onclick="return enviarContactenos()" value="Enviar" id="botonEnviar">
 
                         </form>
+
+                        <div id = errorContactenos> </div>
 
                     </div>
                 
@@ -110,6 +115,10 @@
                         <img src="0. Imagenes/3. contactenos/0.-imagenForContacetenos.webp" alt="Imagen de Logearse">
 
                     </figure>
+
+                    <br>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.805038259461!2d-74.2034172241482!3d4.628844642274496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e09fb7b90c5%3A0x3a8f5f7057dc2a3c!2sCra.%2093d%20%2371%2C%20Bosa%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1682635253698!5m2!1ses!2sco" width="94%" height="450px"  allowfullscreen="" aria-hidden="false" tabindex="0" id="mapaContactenos"></iframe>
 
                 </div>
 

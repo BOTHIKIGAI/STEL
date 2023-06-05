@@ -1310,17 +1310,17 @@ footer .container .sec p {
 
 .formularioContactenos .contenedorForContactenos .box .cuerpoForContactenos {
     text-align: justify;
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: #f2ebdc;
     backdrop-filter: blur(100px);
     padding: 20px;
     border: solid 5px var(--main-color);
-    border-radius: 30px
+    border-radius: 30px;
 
 }
 
 .formularioContactenos .contenedorForContactenos .box .cuerpoForContactenos h1 {
     font-size: 4em;
-    color: var(--main-color)
+    color: var(--main-color);
 
 }
 
@@ -1422,14 +1422,32 @@ footer .container .sec p {
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 20px;
-
+    font-size: 20px;
+    transition: all .50s ease-in-out;
+    bottom: -5px;
 }
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .botonEnviarFormulario:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    position: relative;
+    bottom: 5px;
+    transition: all .50s ease-in-out;
+    
+}
+
+
 
 .main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .olvide_Constraseña {
     text-align: center;
+    display: flex;
 }
 
 .main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .olvide_Constraseña a{
     text-decoration: none;
     color: var(--text-color);
+    font-size: 20px;
+    align-self: center;
+    margin: 0 auto;
 }
+

@@ -1371,6 +1371,19 @@ footer .container .sec p {
     background-color: var(--main-color);
 }
 
+@media (max-width: 1080px) {
+    
+    .formularioContactenos .contenedorForContactenos {
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+    }
+
+    .formularioContactenos .contenedorForContactenos .box figure img {
+        display: none;
+    }
+
+}
+
 /* Ingresar - Decima Parte - Boton para ir atras */
 
 

@@ -1371,3 +1371,65 @@ footer .container .sec p {
     background-color: var(--main-color);
 }
 
+/* Ingresar - Decima Parte - Boton para ir atras */
+
+
+.main_formulario_ingresar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .titulo_formulario_ingresar h1{ 
+    font-size: 70px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+    
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar {
+    display: flex;
+    justify-content: center;
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar i {
+    font-size: 30px;
+    align-self: center;
+    color: var(--main-color);
+    
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .botonEnviarFormulario{
+
+    background-color: var(--main-color);
+    border: solid 2px var(--text-color);
+    color: var(--bg-color);
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .olvide_Constraseña {
+    text-align: center;
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .olvide_Constraseña a{
+    text-decoration: none;
+    color: var(--text-color);
+}

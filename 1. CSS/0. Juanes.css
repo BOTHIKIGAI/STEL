@@ -1409,6 +1409,14 @@ footer .container .sec p {
     
 }
 
+.main_formulario_ingresar .cuerpo_formulario_ingresar .titulo_formulario_ingresar p{ 
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 15px;
+    
+}
+
 .main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar {
     display: flex;
     justify-content: center;
@@ -1608,3 +1616,6 @@ footer .container .sec p {
     text-align: left;
     
 }
+
+/* Menu Laterla */ 
+

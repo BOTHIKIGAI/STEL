@@ -1564,3 +1564,38 @@ footer .container .sec p {
     border-radius: 50px;
     padding: 10px;
 }
+
+
+/* Mapa del Sitio - Parte #13 */
+
+.mapa_Sitio_main {
+    text-align: center;
+    display: grid;
+}
+
+.mapa_Sitio_main .mapa_Sitio_Cuerpo .titulo_Mapa_Sitio h1{
+    color: var(--main-color);
+    font-size: 100px;
+    padding-bottom: 50px;
+}
+
+.mapa_Sitio_main .mapa_Sitio_Cuerpo .titulo_Mapa_Sitio p{
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.mapa_Sitio_main .mapa_Sitio_Cuerpo .contenido_Mapa_Sitio a{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    transition: all .50s ease-in-out;
+
+}
+
+.mapa_Sitio_main .mapa_Sitio_Cuerpo .contenido_Mapa_Sitio a:hover{
+    transform: translateX(10px);
+ }

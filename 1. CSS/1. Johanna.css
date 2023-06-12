@@ -29,32 +29,53 @@ body {
     background: #23518C;
     height: 100%;
     width: 290px;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.sidebar.close{
+    width: 78px;
 }
 .sidebar .logo_details{
     height: 60px;
-    width: 100%; 
+    width: 100%;
+    color: #fff; 
     display: flex;
     align-items: center;
 }
-
-
+.sidebar .logo_details i{
+    font-size: 30px;
+    color: #f2ebdc;
+    height: 0px;
+    align-items: center;
+    margin: 30px;
+    display: flexbox;
+}
 .sidebar .logo_details .logo_name {
     font-size: 22px;
     color: #fff;
     font-weight: 600;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 80px;
     width: 100%;
     line-height: 50px;
-    margin: 50px;
+    margin: 0;
     padding-top: 30px;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
 }
-
+.sidebar.close .logo_details .logo_name{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
 .sidebar .nav-links{
     height: 100%;
     padding: 30px 0 150px 0;
     overflow: auto;
+}
+.sidebar.close .nav-links{
+    overflow: visible;
 }
 .sidebar .nav-links::-webkit-scrollbar{
     display: none;
@@ -72,17 +93,24 @@ body {
     align-items: center;
     justify-content: space-between; 
 }
+.sidebar.close .nav-links li .iocn-link{
+    display: block;
+}
 .sidebar .nav-links li i{
     height: 80px;
     min-width: 82px;
     text-align: center;
     line-height: 80px; 
     color: #f2ebdc;
-    font-size: 20px;
+    font-size: 30px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 .sidebar .nav-links li.showMenu i.arrow{
    transform: rotate(-180deg); 
+}
+.sidebar.close .nav-links i.arrow{
+    display: none;    
 }
 .sidebar .nav-links li a{
     display: flex;
@@ -93,6 +121,10 @@ body {
     font-size: 18px;
     font-weight: 400px;
     color: #f2ebdc;
+}
+.sidebar.close .nav-links li a .link_name{
+   opacity: 0;
+   pointer-events: none; 
 }
 .sidebar .nav-links li .sub-menu{
     padding: 6px 6px 14px 80px;
@@ -124,6 +156,7 @@ body {
     border-radius: 0 6px 6px 0;
     transition: all 0.4 ease;
     opacity: 0;
+    display: block;
     pointer-events: none;
 }
 .sidebar.close .nav-links li:hover .sub-menu{
@@ -134,39 +167,91 @@ body {
 .sidebar .nav-links li .sub-menu.link_name{
     display: none;
 }
+.sidebar .nav-links li .sub-menu.link_name{
+    display: none;
+}
+
 .sidebar.close .nav-links li .sub-menu.link_name{
     font-size: 18px;
     opacity: 1;
     display: block;
 }
 .sidebar .profile-details{
-  position: fixed;
-  bottom: 0;  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #1e5a92;
-  padding: 6px 0;
+    position: fixed;
+    bottom: 0;  
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e5a92;
+    padding: 6px 0;
+    transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+    background: none;
+}
+.sidebar.close .profile-details{
+    width: 4px;
 }
 .sidebar .profile-details .profile-content{
     display: flex;
     align-items: center;
 }
 .sidebar .profile-details img{
-   height: 80px;
-   width: 80px;
-   object-fit: cover; 
-   border-radius:16px;
-   margin: 0 14px 0 12px;
-   background: #1e5a92;
-   padding: 10px;
+    height: 72px;
+    width: 75px;
+    object-fit: cover; 
+    border-radius:16px;
+    margin: 0 0 12px;
+    background: #1e5a92;
+    transition: all 0.5s ease;
+    
+}
+.sidebar.close .profile-details img{
+    padding: 8px;
 }
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job{
-  color: #f2ebdc;
-  font-size: 18px; 
-  font-weight: 500; 
+    color: #f2ebdc;
+    font-size: 18px; 
+    font-weight: 500; 
+    white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job{
+    display: none;
 }
 .sidebar .profile-details .job{
     font-size: 12px;
+}
+.home-section{
+    position: relative;
+    background: #f2ebdc;
+    height: 100vh;
+    left: 280px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px); 
+}
+.home-section .home-content{
+    height: 80px;
+    display: flex; 
+    align-items: center;
+}
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+    color: #1e5a92;
+    font-size: 40px;
+}    
+.home-section .home-content .bx-menu{
+    margin: 0 15px;
+    cursor: pointer;
+}
+.home-section .home-content .text{
+    font-size: 26px;
+    font-weight: 600;
 }

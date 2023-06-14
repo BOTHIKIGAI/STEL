@@ -6,7 +6,6 @@
 
 /* Menu Laterla */ 
 
-
-.hola {
-    color: var(--text-color);
+body {
+    background-color: var(--bg-color);
 }

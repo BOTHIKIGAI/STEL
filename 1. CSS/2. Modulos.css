@@ -7,4 +7,6 @@
 /* Menu Laterla */ 
 
 
-
+.hola {
+    color: var(--text-color);
+}

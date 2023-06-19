@@ -107,8 +107,80 @@
 
         <!-- Formulario crear usuario -->
 
-        
+        <div class="container text-center" style="padding-top: 30px;">
+            
+            <div class="row">
+              
+                <div class="col">
 
+                    <div id="fomrularioUsuariosCru">
+                
+                        <h1 style="margin-bottom: 40px;">Creación usurio <i class="bi bi-person-add"></i></h1>
+                        
+                        <form class="row g-3 needs-validation was-validated" novalidate="">
+                            <div class="col-md-6">
+                              
+                                <label for="validationCustom01" class="form-label">Nombre</label>
+                              
+                                <input type="text" class="form-control" id="validationCustom01" required="">
+                              
+                                <div class="valid-feedback"> Perfecto! </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              
+                                <label for="validationCustomUsername" class="form-label">Correo</label>
+                              
+                                <div class="input-group has-validation">
+                              
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                              
+                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="">
+                              
+                                    <div class="invalid-feedback">Ingresa un correo valido</div>
+                                    <div class="valid-feedback"> Correo registrado</div>
+                              </div>
+                            
+                            </div>
+
+                            <div class="col-md-6">
+                              
+                                <label for="validationCustom04" class="form-label">Tipo de usuario</label>
+                              
+                                <select class="form-select" id="validationCustom04" required="">
+                                
+                                    <option selected="" disabled="" value="">...</option>
+                                
+                                    <option>Residente - propietario</option>
+                                    <option>Residente - arrendatario</option>
+                                    <option>Trabajador - vigilante</option>
+                                    <option>Trabajador - todero</option>
+
+                              
+                                </select>
+                              
+                                <div class="invalid-feedback">Por favor seleccione un tipo de usuario</div>
+
+                            </div>
+
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Siguiente</button>
+                            </div>
+                          </form>
+
+                    </div>
+              
+                </div>
+              
+                <div class="col">
+                
+                    <img src="0. Imagenes/11. moduloCreacionUsuario/imagen_usuario_creacionUsuario.jpg" alt="" style="width: 600px; border-radius: 30px">
+              
+                </div>
+            
+            </div>
+        
+        </div>
 
         <!-- Footer -->
 

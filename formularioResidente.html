@@ -119,19 +119,19 @@
                 
                     <label for="validationCustom01" class="form-label">Nombre</label>
                
-                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <input type="text" class="form-control" id="validationCustom01" required maxlength="35">
 
-                    <div class="valid-feedback"> Looks good! </div>
+                    <div class="valid-feedback"> Perceto! </div>
               
                 </div>
 
                 <div class="col-md-4">
                 
-                    <label for="validationCustom04" class="form-label">Tipo de residente</label>
+                    <label for="validationCustom02" class="form-label">Tipo de residente</label>
                 
-                    <select class="form-select" id="validationCustom04" required>
+                    <select class="form-select" id="validationCustom02" required>
                   
-                        <option selected disabled value="">...</option>
+                        <option selected disabled>...</option>
                   
                         <option>Residente - Propietario</option>
                         <option>Residente - Arrendatario</option>
@@ -139,21 +139,19 @@
                 
                     </select>
                 
-                    <div class="invalid-feedback">Please select a valid state.
-                
-                    </div>
+                    <div class="invalid-feedback">Seleccione el tipo de residente</div>
               
                 </div>
               
                 <div class="col-md-6">
               
-                    <label for="validationCustomUsername" class="form-label">Correo</label>
+                    <label for="validationCustom03" class="form-label">Correo</label>
                 
                     <div class="input-group has-validation">
                   
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
                   
-                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <input type="email" class="form-control" id="validationCustom03" aria-describedby="inputGroupPrepend" required >
                   
                         <div class="invalid-feedback">Please choose a username.</div>
 
@@ -168,7 +166,7 @@
                 
                     <select class="form-select" id="validationCustom04" required>
                   
-                        <option selected disabled value="">Pertenece...</option>
+                        <option selected disabled>Pertenece...</option>
                   
                         <option>1</option>
                         <option>2</option>
@@ -193,7 +191,7 @@
                 
                     <label for="validationCustom05" class="form-label">Casá</label>
                 
-                    <input type="number" class="form-control" id="validationCustom05" required>
+                    <input type="number" class="form-control" id="validationCustom05" required required pattern="[0-9]{0,10}">
                 
                     <div class="invalid-feedback">Please provide a valid zip.</div>
               
@@ -203,9 +201,9 @@
 
                 <div class="col-md-5">
                 
-                    <label for="validationCustom01" class="form-label">Cedula</label>
+                    <label for="validationCustom06" class="form-label">Cedula</label>
                
-                    <input type="number" class="form-control" id="validationCustom01" value="" required>
+                    <input type="number" class="form-control" id="validationCustom06" required required pattern="[0-239]{0,240}">
 
                     <div class="valid-feedback"> Looks good! </div>
               
@@ -213,9 +211,9 @@
 
                 <div class="col-md-5">
                 
-                    <label for="validationCustom01" class="form-label">Celular</label>
+                    <label for="validationCustom07" class="form-label">Celular</label>
                
-                    <input type="number" class="form-control" id="validationCustom01" value="" required>
+                    <input type="tel" class="form-control" id="validationCustom07" required required pattern="[0-19]{0,20}">
 
                     <div class="valid-feedback"> Looks good! </div>
               
@@ -223,9 +221,9 @@
 
                 <div class="col-md-5">
                 
-                    <label for="validationCustom01" class="form-label">Fecha de nacimiento</label>
+                    <label for="validationCustom08" class="form-label">Fecha de nacimiento</label>
                
-                    <input type="date" class="form-control" id="validationCustom01" value="" required>
+                    <input type="date" class="form-control" id="validationCustom08" required>
 
                     <div class="valid-feedback"> Looks good! </div>
               

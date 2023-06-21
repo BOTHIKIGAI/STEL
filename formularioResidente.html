@@ -109,139 +109,216 @@
 
         <!-- Formulario -->
 
-        <div class="container pt-5" >
-
-            <h1 style="padding-bottom: 20px;">Primera Parte</h1>
+        <div class="container text-center pt-4 ">
             
-            <form class="row g-3 needs-validation" novalidate style="max-width: 900px;">
+            <div class="row align-items-start">
+              
+                <div class="col">
                 
-                <div class="col-md-5">
-                
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-               
-                    <input type="text" class="form-control" id="validationCustom01" required maxlength="35">
+                    <H1 style="margin-bottom: 30px;">Usuario Residente</H1>
 
-                    <div class="valid-feedback"> Perceto! </div>
-              
-                </div>
+                    <hr>
 
-                <div class="col-md-4">
-                
-                    <label for="validationCustom02" class="form-label">Tipo de residente</label>
-                
-                    <select class="form-select" id="validationCustom02" required>
-                  
-                        <option selected disabled>...</option>
-                  
-                        <option>Residente - Propietario</option>
-                        <option>Residente - Arrendatario</option>
-                        <option>Residente - Integrante</option>
-                
-                    </select>
-                
-                    <div class="invalid-feedback">Seleccione el tipo de residente</div>
-              
-                </div>
-              
-                <div class="col-md-6">
-              
-                    <label for="validationCustom03" class="form-label">Correo</label>
-                
-                    <div class="input-group has-validation">
-                  
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  
-                        <input type="email" class="form-control" id="validationCustom03" aria-describedby="inputGroupPrepend" required >
-                  
-                        <div class="invalid-feedback">Please choose a username.</div>
+                    <div>
 
-                
+                        <form action="">
+
+                            <!--Tipo de residente -->
+
+                            <label for="tipoResidente" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de residente</label>
+                            <select id=tipoResidente class="form-select" aria-label="Default select example">
+                                <option>residente...</option>
+                                <option value="Residente-Propietario">Residente - Propietario</option>
+                                <option value="Residente-Propietario">Residente - Arrendatario</option>
+                                <option value="Residente-Propietario">Residente - Integrante</option>
+                            </select>
+
+                            <!--Nombre residente -->
+
+                            <label for="nombreResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
+                            <input type="text" class="form-control" id="nombreResidente" aria-describedby="nombre_del_residente" maxlength="35" placeholder="nombre...">
+
+                            <!-- Cedula residente -->
+
+                            <label for="cedulaResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
+                            <input type="tel" class="form-control" id="cedulaResidente" aria-describedby="cedula_del_residente" maxlength="11" placeholder="cedula...">
+
+                            <!-- Celular residente -->
+
+                            <label for="celularResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
+                            <input type="tel" class="form-control" id="celularResidente" aria-describedby="celular_del_residente" maxlength="20" placeholder="celular...">
+
+                            <!-- Email -->
+
+                            <label for="emailResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
+                            <input type="email" class="form-control" id="emailResidente" aria-describedby="email_del_residente" maxlength="40" placeholder="correo electronico...">
+
+                            <!-- Fecha nacimiento -->
+
+                            <label for="fechaNacimiento" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="email_del_residente">
+
+                            <!-- Inmueble -->
+
+                            <div class="container text-center pt-4 pb-5">
+
+                                <div class="row align-items-start">
+
+                                    <div class="col">
+
+                                        <!-- Anden -->
+
+                                        <label for="andenResidente" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de residente</label>
+                                        <select id=andenResidente class="form-select" aria-label="Anden_Perteneciente">
+                                            <option>Anden...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col">
+
+                                        <!-- Numero de la casa -->
+
+                                        <label for="numeroCasaResidente" class="form-label" style="margin-bottom: 10px; font-weight: 700; color:#23518C;" >Casa</label>
+                                        <input type="tel" class="form-control" id="numeroCasaResidente" aria-describedby="nombre_del_residente" maxlength="3" placeholder="numero de la casa...">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Mascotas -->
+
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="background-color:#23518C; width: 400px;">Mascotas</button>
+                            </p>
+
+                              
+                            <div style="min-height: 10px;">
+                                
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                  
+                                    <div class="card card-body" style="width: 100%;">
+
+                                        <!-- Tipo de mascota -->
+
+                                        <label for="tipoMascota" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de mascota</label>
+                                        <select id=tipoMascota class="form-select" aria-label="Anden_Perteneciente">
+                                            
+                                            <option>...</option>
+                                            <option value="Gato">Gato</option>
+                                            <option value="Perro">Perro</option>
+                                            <option value="Perro">Otra</option>
+
+                                        </select>
+
+                                        <!--Nombre Mascota -->
+
+                                        <label for="nombreMascotaResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre mascota</label>
+                                        <input type="text" class="form-control" id="nombreMascotaResidente" aria-describedby="nombre_del_residente" maxlength="20" placeholder="nombre mascota...">
+
+                                        <!-- Raza -->
+
+                                        <label for="razaMascotaResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Raza</label>
+                                        <input type="text" class="form-control" id="razaMascotaResidente" aria-describedby="nombre_del_residente" maxlength="20" placeholder="raza...">
+                                        
+                                        <!-- Color -->
+
+                                        <label for="colorMascotaResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Color</label>
+                                        <input type="text" class="form-control" id="colorMascotaResidente" aria-describedby="nombre_del_residente" maxlength="20" placeholder="raza...">
+
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Integrante -->
+
+                            <p style="padding-top: 15px;">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntegrante" aria-expanded="false" aria-controls="collapseIntegrante" style="background-color:#23518C; width: 400px;">Integrante</button>
+                            </p>
+
+                              
+                            <div style="min-height: 10px;">
+                                
+                                <div class="collapse collapse-horizontal" id="collapseIntegrante">
+                                  
+                                    <div class="card card-body" style="width: 100%;">
+
+                                        <!--Tipo de residente -->
+
+                                        <label for="tipoResidente" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de residente</label>
+                                        <select id=tipoResidente class="form-select" aria-label="Default select example">
+                                            <option>residente...</option>
+                                            <option value="Residente-Propietario">Residente - Propietario</option>
+                                            <option value="Residente-Propietario">Residente - Arrendatario</option>
+                                            <option value="Residente-Propietario">Residente - Integrante</option>
+                                        </select>
+
+                                        <!--Nombre residente -->
+
+                                        <label for="nombreResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
+                                        <input type="text" class="form-control" id="nombreResidente" aria-describedby="nombre_del_residente" maxlength="35" placeholder="nombre...">
+
+                                        <!-- Documento de identidad -->
+
+                                        <label for="cedulaResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Num. documento de Identidad</label>
+                                        <input type="tel" class="form-control" id="cedulaResidente" aria-describedby="cedula_del_residente" maxlength="11" placeholder="cedula...">
+
+                                        <!-- Celular residente -->
+
+                                        <label for="celularResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
+                                        <input type="tel" class="form-control" id="celularResidente" aria-describedby="celular_del_residente" maxlength="20" placeholder="celular...">
+
+                                        <!-- Email -->
+
+                                        <label for="emailResidente" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
+                                        <input type="email" class="form-control" id="emailResidente" aria-describedby="email_del_residente" maxlength="40" placeholder="correo electronico...">
+
+                                        <!-- Fecha nacimiento -->
+
+                                        <label for="fechaNacimiento" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Fecha de Nacimiento</label>
+                                        <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="email_del_residente">
+
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+
+                            
+                        </form>
+
+
+
                     </div>
               
                 </div>
               
-                <div class="col-md-3">
+                <div class="col pb-4">
                 
-                    <label for="validationCustom04" class="form-label">Anden</label>
-                
-                    <select class="form-select" id="validationCustom04" required>
-                  
-                        <option selected disabled>Pertenece...</option>
-                  
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                
-                    </select>
-                
-                    <div class="invalid-feedback">Please select a valid state.
-                
-                    </div>
+                    <img src="0. Imagenes/12. registroUsuarios/registroUsuarioResidente.png" alt="" style="border-radius: 10px;">
               
                 </div>
-              
-                <div class="col-md-3">
-                
-                    <label for="validationCustom05" class="form-label">Casá</label>
-                
-                    <input type="number" class="form-control" id="validationCustom05" required required pattern="[0-9]{0,10}">
-                
-                    <div class="invalid-feedback">Please provide a valid zip.</div>
-              
-                </div>
-
-                <h1 style="padding-top: 20px;">Segunda Parte</h1>
-
-                <div class="col-md-5">
-                
-                    <label for="validationCustom06" class="form-label">Cedula</label>
-               
-                    <input type="number" class="form-control" id="validationCustom06" required required pattern="[0-239]{0,240}">
-
-                    <div class="valid-feedback"> Looks good! </div>
-              
-                </div>
-
-                <div class="col-md-5">
-                
-                    <label for="validationCustom07" class="form-label">Celular</label>
-               
-                    <input type="tel" class="form-control" id="validationCustom07" required required pattern="[0-19]{0,20}">
-
-                    <div class="valid-feedback"> Looks good! </div>
-              
-                </div>
-
-                <div class="col-md-5">
-                
-                    <label for="validationCustom08" class="form-label">Fecha de nacimiento</label>
-               
-                    <input type="date" class="form-control" id="validationCustom08" required>
-
-                    <div class="valid-feedback"> Looks good! </div>
-              
-                </div>
-
-                
-              
-                <div class="col-12" style="padding-top: 10px">
-                
-                    <button class="btn btn-primary" type="submit">Crear usuario</button>
-              
-                </div>
-
             
-            </form>
+            </div>
           
         </div>
-
           
 
 

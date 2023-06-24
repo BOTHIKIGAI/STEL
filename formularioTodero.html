@@ -109,112 +109,134 @@
 
         <!-- Formulario -->
 
-        <div class="container pt-5" >
-
-            <h1 style="padding-bottom: 20px;">Creación usuario todero</h1>
+        <div class="container text-center pt-4 ">
             
-            <form class="row g-3 needs-validation" novalidate style="max-width: 900px;">
-                
-                <div class="col-md-5">
-                
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-               
-                    <input type="text" class="form-control" id="validationCustom01"  required maxlength="30">
-
-                    <div class="valid-feedback"> Perfecto! </div>
+            <div class="row align-items-start">
               
-                </div>
+                <div class="col">
+                
+                    <H1 style="margin-bottom: 30px;">Usurario Todero</H1>
 
-                <div class="col-md-5">
-                    <label for="validationCustom01" class="form-label">Celular</label>
-                    <input type="tel" class="form-control" id="validationCustom01" pattern="\d{11}" required>
-                    <div class="valid-feedback">¡Se ve bien!</div>
-                    <div class="invalid-feedback">El número de celular debe tener 11 dígitos.</div>
-                </div>
-                
+                    <hr>
 
-                <div class="col-md-4">
-                
-                    <label for="validationCustom03" class="form-label">Tipo de contrato</label>
-                
-                    <select class="form-select" id="validationCustom03" required>
-                  
-                        <option selected disabled >...</option>
-                  
-                        <option>Indefinido</option>
-                        <option>Fijo</option>
-                        <option>Prestación de servicios</option>
-                        
-                
-                    </select>
-                
-                    <div class="invalid-feedback">Por favor seleccione un tipo de contrato.
-                
+                    <div>
+
+                        <form action="">
+
+                            <!--Nombre todero -->
+
+                            <label for="nombretodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
+                            <input type="text" class="form-control" id="nombretodero" aria-describedby="nombre_del_todero" maxlength="35" placeholder="nombre...">
+
+                            <!-- Cedula todero -->
+
+                            <label for="cedulatodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
+                            <input type="tel" class="form-control" id="cedulatodero" aria-describedby="cedula_del_todero" maxlength="11" placeholder="cedula...">
+
+                            <!-- Celular todero -->
+
+                            <label for="celulartodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
+                            <input type="tel" class="form-control" id="celulartodero" aria-describedby="celular_del_todero" maxlength="20" placeholder="celular...">
+
+                            <!-- Email -->
+
+                            <label for="emailtodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
+                            <input type="email" class="form-control" id="emailtodero" aria-describedby="email_del_todero" maxlength="40" placeholder="correo electronico...">
+
+                            <!-- Empresa -->
+
+                            <label for="emailtodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Empresa</label>
+                            <input type="email" class="form-control" id="emailtodero" aria-describedby="email_del_todero" maxlength="40" placeholder="nombre de la empresa...">
+
+                            <!-- Contrato -->
+
+                            <div class="container text-center pt-4 pb-5">
+
+                                <div class="row align-items-start">
+
+                                    <div class="col">
+
+                                        <!-- Tipo de Contrato -->
+
+                                        <label for="andentodero" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de contrato</label>
+                                        <select id=andentodero class="form-select" aria-label="Anden_Perteneciente">
+                                            <option>contrato...</option>
+                                            <option value="Indefinido">Indefinido</option>
+                                            <option value="Fijo">Fijo</option>
+                                            <option value="Fijo">Prestación de Servicios</option>
+                            
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col">
+
+                                        <!-- Contrato -->
+
+                                        <div class="mb-3">
+                                            
+                                            <label for="contratoguaridaSeguridad" class="form-label" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Contrato</label>                                            
+                                            <input class="form-control" type="file" id="contratoguaridaSeguridad">
+                                        
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Certificados -->
+
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="background-color:#23518C; width: 400px;">Certificados</button>
+                            </p>
+
+                              
+                            <div style="min-height: 10px;">
+                                
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                  
+                                    <div class="card card-body" style="width: 100%;">
+
+                                    <!--Nombre certificado -->
+
+                                    <label for="nombreCertificadotodero" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre certificado</label>
+                                    <input type="text" class="form-control" id="nombreCertificadotodero" aria-describedby="nombre_del_todero" maxlength="35" placeholder="nombre certificado..."> 
+
+                                    <!-- Documento Certificado -->
+
+                                    <div class="mb-3">
+                                            
+                                        <label for="contratoguaridaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Certificado</label>                                            
+                                        <input class="form-control" type="file" id="contratoguaridaSeguridad">
+                                        
+                                    </div>                                    
+
+
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3" style="margin-top: 10px; background-color: #0d0d0d; color: #f2ebdc; border: 1px solid rgba(0,0,0,0.15);">Crear Usuario</button>
+                            </div>
+                            
+                        </form>
+
                     </div>
               
                 </div>
               
-                <div class="col-md-6">
-              
-                    <label for="validationCustom04" class="form-label">Correo</label>
+                <div class="col pb-4">
                 
-                    <div class="input-group has-validation">
-                  
-                        <span class="input-group-text" id="validationCustom04">@</span>
-                  
-                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required maxlength="40">
-                  
-                        <div class="invalid-feedback">Por favor ingresa un correo valido</div>
-
-                
-                    </div>
+                    <img src="0. Imagenes/12. registroUsuarios/registroUsuariotodero.png" alt="" style="border-radius: 10px;">
               
                 </div>
-
-                <div class="col-md-5">
-                    
-                    <label for="validationCustom05" class="form-label">Cédula</label>
-                    <input type="number" class="form-control" id="validationCustom05" required pattern="[0-9]{0,10}">
-                    <div class="valid-feedback">¡Anotado!</div>
-                    <div class="invalid-feedback">La cédula debe tener 10 dígitos.</div>
-
-                </div>
-                
-
-                <div class="col-md-5">
-                
-                    <label for="validationCustom06" class="form-label">Empresa</label>
-               
-                    <input type="text" class="form-control" id="validationCustom06" required maxlength="30">
-
-                    <div class="valid-feedback"> Looks good! </div>
-              
-                </div>
-
-                <div class="mb-3">
-                    
-                    <label for="formFile" class="form-label">Contrato</label>
-                    
-                    <input class="form-control" type="file" id="formFile">
-
-                </div>
-
-                <div class="mb-3">
-                    
-                    <label for="formFile" class="form-label">Certificados</label>
-                    
-                    <input class="form-control" type="file" id="formFile">
-                    
-                </div>
-              
-                <div class="col-12" style="padding-top: 10px">
-                
-                    <button class="btn btn-primary" type="submit">Crear usuario</button>
-              
-                </div>
-
             
-            </form>
+            </div>
           
         </div>
 

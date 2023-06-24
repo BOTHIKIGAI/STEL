@@ -115,7 +115,7 @@
               
                 <div class="col">
                 
-                    <H1 style="margin-bottom: 30px;">Guardia de Seguridad</H1>
+                    <H1 style="margin-bottom: 30px;">Usurario Guardia Seguridad</H1>
 
                     <hr>
 
@@ -123,54 +123,112 @@
 
                         <form action="">
 
-                            <!--Nombre GuardiaSeguridad -->
+                            <!--Nombre guardiaSeguridad -->
 
-                            <label for="nombreGuardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
-                            <input type="text" class="form-control" id="nombreGuardiaSeguridad" aria-describedby="nombre_del_GuardiaSeguridad" maxlength="35" placeholder="nombre...">
+                            <label for="nombreguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
+                            <input type="text" class="form-control" id="nombreguardiaSeguridad" aria-describedby="nombre_del_guardiaSeguridad" maxlength="35" placeholder="nombre...">
 
-                            <!-- Cedula GuardiaSeguridad -->
+                            <!-- Cedula guardiaSeguridad -->
 
-                            <label for="cedulaGuardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
-                            <input type="tel" class="form-control" id="cedulaGuardiaSeguridad" aria-describedby="cedula_del_GuardiaSeguridad" maxlength="11" placeholder="cedula...">
+                            <label for="cedulaguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
+                            <input type="tel" class="form-control" id="cedulaguardiaSeguridad" aria-describedby="cedula_del_guardiaSeguridad" maxlength="11" placeholder="cedula...">
 
-                            <!-- Celular GuardiaSeguridad -->
+                            <!-- Celular guardiaSeguridad -->
 
-                            <label for="celularGuardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
-                            <input type="tel" class="form-control" id="celularGuardiaSeguridad" aria-describedby="celular_del_GuardiaSeguridad" maxlength="20" placeholder="celular...">
+                            <label for="celularguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
+                            <input type="tel" class="form-control" id="celularguardiaSeguridad" aria-describedby="celular_del_guardiaSeguridad" maxlength="20" placeholder="celular...">
 
                             <!-- Email -->
 
-                            <label for="emailGuardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
-                            <input type="email" class="form-control" id="emailGuardiaSeguridad" aria-describedby="email_del_GuardiaSeguridad" maxlength="40" placeholder="correo electronico...">
+                            <label for="emailguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
+                            <input type="email" class="form-control" id="emailguardiaSeguridad" aria-describedby="email_del_guardiaSeguridad" maxlength="40" placeholder="correo electronico...">
 
-                            <!-- Tipo de contrato -->
+                            <!-- Empresa -->
 
-                            <div class="row align-items-start">
+                            <label for="emailguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Empresa</label>
+                            <input type="email" class="form-control" id="emailguardiaSeguridad" aria-describedby="email_del_guardiaSeguridad" maxlength="40" placeholder="nombre de la empresa...">
 
-                                <div class="col">
+                            <!-- Contrato -->
 
-                                    <!-- Tipo de contrato -->
+                            <div class="container text-center pt-4 pb-5">
 
-                                    <label for="andenGuardiaSeguridad" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de Contrato</label>
-                                    <select id=andenGuardiaSeguridad class="form-select" aria-label="Anden_Perteneciente">
-                                        <option>contrato...</option>
-                                        <option value="Indefinido">Indefinido</option>
-                                        <option value="Fijo">Fijo</option>
-                                        <option value="Prestación de servicios">Prestación de servicios</option>
-                                    </select>
+                                <div class="row align-items-start">
+
+                                    <div class="col">
+
+                                        <!-- Tipo de Contrato -->
+
+                                        <label for="andenguardiaSeguridad" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de contrato</label>
+                                        <select id=andenguardiaSeguridad class="form-select" aria-label="Anden_Perteneciente">
+                                            <option>contrato...</option>
+                                            <option value="Indefinido">Indefinido</option>
+                                            <option value="Fijo">Fijo</option>
+                                            <option value="Fijo">Prestación de Servicios</option>
+                            
+                                        </select>
+
+                                    </div>
+
+                                    <div class="col">
+
+                                        <!-- Contrato -->
+
+                                        <div class="mb-3">
+                                            
+                                            <label for="contratoguaridaSeguridad" class="form-label" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Contrato</label>                                            
+                                            <input class="form-control" type="file" id="contratoguaridaSeguridad">
+                                        
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Certificados -->
+
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="background-color:#23518C; width: 400px;">Certificados</button>
+                            </p>
+
+                              
+                            <div style="min-height: 10px;">
+                                
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                  
+                                    <div class="card card-body" style="width: 100%;">
+
+                                    <!--Nombre certificado -->
+
+                                    <label for="nombreCertificadoguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre certificado</label>
+                                    <input type="text" class="form-control" id="nombreCertificadoguardiaSeguridad" aria-describedby="nombre_del_guardiaSeguridad" maxlength="35" placeholder="nombre certificado..."> 
+
+                                    <!-- Documento Certificado -->
+
+                                    <div class="mb-3">
+                                            
+                                        <label for="contratoguaridaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Certificado</label>                                            
+                                        <input class="form-control" type="file" id="contratoguaridaSeguridad">
+                                        
+                                    </div>                                    
+
+
+                                    </div>
 
                                 </div>
                             
-                            <div>                
+                            </div>
 
                             <div class="col-auto">
                                 <button type="submit" class="btn btn-primary mb-3" style="margin-top: 10px; background-color: #0d0d0d; color: #f2ebdc; border: 1px solid rgba(0,0,0,0.15);">Crear Usuario</button>
                             </div>
-
                             
                         </form>
 
                     </div>
+              
+                </div>
               
                 <div class="col pb-4">
                 

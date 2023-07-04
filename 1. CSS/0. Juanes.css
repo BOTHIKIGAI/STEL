@@ -1171,3 +1171,21 @@ footer .container .sec p {
 }
 
 
+@media (max-width: 416px) {
+    #hombreConstruyendo404 {
+        width: 300px;
+    
+    }
+
+    .containerError404 h1 {
+        font-size: 60px;
+    }
+
+    .containerError404 p {
+        text-align: center;
+    }
+
+
+
+    
+}

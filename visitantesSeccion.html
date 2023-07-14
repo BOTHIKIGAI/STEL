@@ -160,22 +160,28 @@
         
                                                 <!-- Tipo de documento -->
         
-                                                <label for="tipoMascota" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de documento</label>
-                                                <select id=tipoMascota class="form-select" aria-label="Anden_Perteneciente">
+                                                <label for="tipoParqueadero" style="margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de parqueadero</label>
+                                                <select id=tipoParqueadero class="form-select" aria-label="parqueadero_tipo_visitante">
                                                     
                                                     <option>...</option>
-                                                    <option value="Perro">Carta de acuerdo</option>
-                                                    <option value="Gato">Paz y Salvo</option>
-                                                    <option value="Gato">Mora</option>
-                                                    <option value="Perro">Otra</option>
+                                                    <option value="Visitante moto">Visitante moto</option>
+                                                    <option value="Visitante carro">Visitante carro</option>
         
                                                 </select>
         
-                                                <!-- Documento -->
-        
-                                                <label for="documentoCartera" class="form-label" style="margin-top: 10px; margin-bottom: 10px; font-weight: 700; color:#23518C">Contrato</label>                                            
-                                                <input class="form-control" type="file" id="documentoCartera">
-            
+                                                <label for="estadoVehiculoVisitante" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Estado vehiculo</label>
+                                                <input type="text" class="form-control" id="estadoVehiculoVisitante" aria-describedby="descripción del vehiculo si presenta un daño" maxlength="30" placeholder="nombre del residente que autoriza...">
+
+                                                <label for="placaVehiculoVisitante" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Placa</label>                                        
+                                                <input type="text" class="form-control" id="placaVehiculoVisitante" aria-describedby="placa_del_vehiculo_visitante" maxlength="30" placeholder="placa del vehiculo...">
+                                                
+                                                <label for="marcaModeloVehiculo" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Placa</label>                                        
+                                                <input type="text" class="form-control" id="marcaModeloVehiculo" aria-describedby="marca y modelo del vehiculo" maxlength="30" placeholder="marca modelo del vehiculo...">
+                                            
+                                                <label for="cupoAsignado" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Cupo asignado</label>                                        
+                                                <input type="number" class="form-control" id="cupoAsignado" aria-describedby="marca y modelo del vehiculo" maxlength="30" placeholder="cupo asignado...">
+
+
         
                                             </div>
         
@@ -183,8 +189,7 @@
                                     
                                     </div>
 
-                            <button type="submit" class="btn btn-primary mb-3" style="margin-top: 30px; background-color: #0d0d0d; color: #f2ebdc; border: 1px solid rgba(0,0,0,0.15); width: 104px;">Mora</button>
-                            <button type="submit" class="btn btn-primary mb-3" style="margin-top: 30px; background-color: #0d0d0d; color: #f2ebdc; border: 1px solid rgba(0,0,0,0.15);">Paz y Salvo</button>
+                            <button type="submit" class="btn btn-primary mb-3" style="margin-top: 30px; background-color: #0d0d0d; color: #f2ebdc; border: 1px solid rgba(0,0,0,0.15); width: 200px;">Registrar</button>
 
                       
                         </div>
@@ -210,8 +215,7 @@
 
                         <th>Anden</th>
                         <th>Inmueble</th>
-                        <th>Estado</th>
-                        <th>Documento</th>
+                        <th>Nombre</th>
                         <th>Consultar</th>
 
                     </tr>
@@ -220,36 +224,31 @@
                     <tr>
                         <td>1</td>
                         <td>10</td>
-                        <td>Mora</td>
-                        <td><a href="4. documentos/0_docsadmin.pdf" download style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
+                        <td>Juan Esteban Cajiao Madero</td>
                         <td><a href="error500.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>20</td>
-                        <td>Paz y Salvo</td>
-                        <td><a href="4. documentos/0_docsadmin.pdf" download style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
+                        <td>Johanna Diaz Robledo</td>
                         <td><a href="error500.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
                     </tr>                    
                     <tr>
                         <td>9</td>
                         <td>103</td>
-                        <td>Paz y Salvo</td>
-                        <td><a href="4. documentos/0_docsadmin.pdf" download style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
+                        <td>David Santiago Olaya</td>
                         <td><a href="error500.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
                     </tr>                   
                     <tr>
                         <td>7</td>
                         <td>83</td>
-                        <td>Mora</td>
-                        <td><a href="4. documentos/0_docsadmin.pdf" download style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
+                        <td>Milan Cajiao Morera</td>
                         <td><a href="error500.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
                     </tr>                       
                     <tr>
                         <td>8</td>
                         <td>100</td>
-                        <td>Paz y Salvo</td>
-                        <td><a href="4. documentos/0_docsadmin.pdf" download style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
+                        <td>Lasa Cajiao Morera</td>
                         <td><a href="error500.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">consultar</a></td>
                     </tr>              
                 </tbody>

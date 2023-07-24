@@ -248,6 +248,7 @@
                           
                             <h5>Multas sin pagar<i class="bi bi-cash-coin" style="font-size: 30px; margin-left: 10px; align-items: center;"></i></h5>
                             <hr>
+                            <canvas id="multasDash"></canvas>
                             
 
                         </div>
@@ -295,6 +296,25 @@
                 },            
             });
           
+        </script>
+        
+        <script>
+            const cta = document.getElementById('multasDash').getContext('2d');
+          
+            new Chart(cta, {
+              type: 'doughnut',
+              data: {
+                labels: ['Mascota sin correa', 'Ruido Excesivo', 'No recogar excrementos', 'Estacionamiento indebido'],
+                datasets: [{
+                  data: [4, 1, 6, 2], // Valores para cada etiqueta
+                  backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', ], // Colores de fondo para cada sector
+                  borderWidth: 1,
+                }],
+              },
+              options: {
+                // Configuraciones adicionales, si es necesario
+              },
+            });
         </script>
           
 

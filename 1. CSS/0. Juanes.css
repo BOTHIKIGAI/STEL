@@ -862,7 +862,7 @@ footer .container .sec p {
 }
 
 
-/* Ingresar - Decima Parte - Boton para ir atras */
+/* Ingresar - Decima Parte - Formulario ingresar */
 
 
 .main_formulario_ingresar {
@@ -891,12 +891,13 @@ footer .container .sec p {
 }
 
 .main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar input{
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     height: 30px;
     width: 310px;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 20px;
+
 
 }
 
@@ -925,7 +926,7 @@ footer .container .sec p {
     
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .botonIngresar a {
+#botonIngresar {
     font-size: 25px;
     text-decoration: none;
     color: var(--bg-color);
@@ -935,8 +936,44 @@ footer .container .sec p {
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 3px;
-    padding-bottom: 3px;    
+    padding-bottom: 3px; 
 }
+
+
+/* Olvide contraseña - Inicio */
+
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña {
+    text-align: center;
+}
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña .titulo_formulario_olvido_contraseña h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña .titulo_formulario_olvido_contraseña p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña .formulario_olvido_contraseña form{
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña .formulario_olvido_contraseña label {
+    font-size: 40px;
+}
+
+.main_formulario_olvido_contraseña .cuerpo_formulario_olvido_contraseña .formulario_olvido_contraseña input {
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Olvide contraseña - Final */
 
 /* Politica de Privacidad - Onceava Parte  */
 

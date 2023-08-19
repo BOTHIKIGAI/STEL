@@ -897,6 +897,7 @@ footer .container .sec p {
     width: 310px;
     margin-left: 10px;
     font-size: 20px;
+    font-weight:400;
 
 
 }
@@ -941,16 +942,34 @@ footer .container .sec p {
 
 /* Validación - formulario loging */
 
-.formulario_input-error_usuario {
+/* 1. Definir el mensaje de error */
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_input-error_usuario {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #23518C;
+    font-size: 20px;
     display: none;
 }
 
-.formulario_input-error_usuario_activo {
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_input-error_usuario-activo { 
     display: block;
 }
 
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .campo_formulario_ingresar_usuario {
+    color: red;
+}
 
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_usuario:focus {
+    outline: none;
+    box-shadow: 3px 0pc 30px var(--main-color);
+}
 
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_passwoard:focus {
+    outline: none;
+    box-shadow: 3px 0pc 30px var(--main-color);
+}
 
 /* Olvide contraseña - Inicio */
 

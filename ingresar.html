@@ -33,6 +33,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
             <!-- Google fonts nos permite usar caligrafias open source -->
+        
+        <script src="2. JavaScript/0-validaciónFormularios/0-formularioLoging.js"></script>
+            <!-- JavaScript de validación para el formulario loging -->
 
     </head>
 
@@ -83,10 +86,24 @@
 
                     <form action="" class="campos_formulario_ingresar">
 
-                        <label for="IngName"><i class="fa-solid fa-user"></i> </label>
-                        <input type="email" id="IngName" name="IngName" maxlength="60"><br>
-                        <label for="PassWordIng"><i class="fa-solid fa-lock"></i></label>
-                        <input type="password" id="PassWordIng" name="PassWordIng"><br><br>
+                        <div class="campo_formulario_ingresar_usuario">
+
+                            <label for="IngName"><i class="fa-solid fa-user"></i> </label>
+                            <input type="email" id="IngName" name="IngName" maxlength="60" placeholder=" ingresar correo..."><br>
+
+                        </div>
+
+                        <p class="formulario_input-error_usuario"></p>
+
+                        <div class="campo_formulario_ingresar_contraseña">
+                        
+                            <label for="PassWordIng"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" id="PassWordIng" name="PassWordIng" placeholder=" ingresar contraseña..."><br><br>
+                        
+                        </div>
+
+                        <p class="formulario_input-error_ingreso"></p>
+
                         <center><button type="submit" id="botonIngresar">Ingresar</button></center>
 
                     </form>

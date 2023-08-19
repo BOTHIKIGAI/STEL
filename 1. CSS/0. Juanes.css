@@ -939,6 +939,18 @@ footer .container .sec p {
     padding-bottom: 3px; 
 }
 
+/* Validación - formulario loging */
+
+.formulario_input-error_usuario {
+    display: none;
+}
+
+.formulario_input-error_usuario_activo {
+    display: block;
+}
+
+
+
 
 /* Olvide contraseña - Inicio */
 

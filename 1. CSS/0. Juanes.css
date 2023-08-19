@@ -971,6 +971,14 @@ footer .container .sec p {
     box-shadow: 3px 0pc 30px var(--main-color);
 }
 
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_usuario_error input {
+    border: 3px solid #af2323;
+}
+
+.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_passwoard_correcto input {
+    border: 3px solid #af2323;
+}
+
 /* Olvide contraseña - Inicio */
 
 

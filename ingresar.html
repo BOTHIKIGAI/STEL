@@ -36,83 +36,62 @@
         
         <script src="2. JavaScript/0-validaciónFormularios/0-formularioLoging.js"></script>
             <!-- JavaScript de validación para el formulario loging -->
-
+        
     </head>
 
     <!-- Header -->
-        
-    <header>
+    
+    <body>
 
-        <a href="index.html" class="logo"><i><img src="0. Imagenes/0. Logos/1. logo sin titulo.png" id="LogoSTEL"></i><span>STEL</span></a>
+        <header>
 
-        <ul class="navbar">
+            <a href="index.html" class="logo"><i><img src="0. Imagenes/0. Logos/1. logo sin titulo.png" id="LogoSTEL"></i><span>STEL</span></a>
 
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contactenos.html">Contactenos</a></li>
-            
-        </ul>
+            <ul class="navbar">
 
-        <div class="main">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactenos.html">Contactenos</a></li>
+                
+            </ul>
 
-            <a href="ingresar.html" class="user" style="color: #23518C"><i class="ri-user-6-line"></i>Ingresar</a>
+            <div class="main">
 
-            <div class="bx bx-menu" id="menu-icon"></div>
+                <a href="ingresar.html" class="user" style="color: #23518C"><i class="ri-user-6-line"></i>Ingresar</a>
 
-        </div>
-
-    </header>
-
-    <BR></BR>
-    <BR></BR>
-    <BR></BR>
-    <BR></BR>
-    <BR></BR>
-
-        
-        
-        <div class="main_formulario_ingresar">
-
-            <div class="cuerpo_formulario_ingresar">
-
-                <div class="titulo_formulario_ingresar">
-
-                    <h1>Ingresar <i class="fa-solid fa-unlock"></i></h1> 
-
-                </div>
-
-                <div class="formulario_ingresar">
-
-                    <form action="" class="campos_formulario_ingresar">
-
-
-                        <label for="IngName"><i class="fa-solid fa-user"></i> </label>
-                        <input type="email" id="IngName" name="IngName" maxlength="60" placeholder=" ingresar correo..." class="formulario_grupo_input_usuario"><br>
-                        
-                        <label for="PassWordIng"><i class="fa-solid fa-lock"></i></label>
-                        <input type="password" id="PassWordIng" name="PassWordIng" placeholder=" ingresar contraseña..." class="formulario_grupo_input_passwoard"><br><br>
-                        
-
-                        <center><button type="submit" id="botonIngresar">Ingresar</button></center>
-
-                    </form>
-
-                    <div class="olvide_Constraseña">
-
-                        <i class="fa-solid fa-key"></i> <a href="olvidoConstraseña.html">¿olvido su contraseña?</a>
-
-                    </div>
-
-                </div>
+                <div class="bx bx-menu" id="menu-icon"></div>
 
             </div>
 
-        </div>
+        </header>
+
+        <BR></BR>
+        <BR></BR>
+        <BR></BR>
+        <BR></BR>
+        <BR></BR>
 
 
-        <script type="text/javascript" src="2. JavaScript/0. Juanes.js"></script>
-            <!-- Java Script Link-->
+        <form action="" class="formularioIngreso" id="formularioIngreso">
+
+            <h1>Inicio de sesión</h1>
+            <label for="usuarioIngreso">Correo <i class="fa-solid fa-user" style="color: #23518c;"></i></label>
+            <div class="inputUsuarioIngreso">
+                <input type="text" id="usuarioIngreso" name="usuarioIngreso" maxlength="30"><br><br>
+            </div>
+            
+            <label for="passIngreso">Contraseña <i class="fa-solid fa-key" style="color: #23518c;"></i></label>
+            <div class="inputContraseñaUsuario">
+                <input type="password" id="passIngreso" name="passIngreso"><br><br>
+            </div>
+
+            <p class="estadoIngreso"></p>
+
+            <button type="submit">Ingresar</button>
+
+        </form>
+
 
         <!-- Footer -->
 
@@ -193,11 +172,6 @@
 
         <script type="text/javascript" src="2. JavaScript/0. Juanes.js"></script>
             <!-- Java Script Link-->
-
-    </body>
-
-
-</html>
 
     </body>
 

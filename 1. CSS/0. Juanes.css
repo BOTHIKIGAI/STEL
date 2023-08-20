@@ -864,80 +864,53 @@ footer .container .sec p {
 
 /* Ingresar - Decima Parte - Formulario ingresar */
 
-
-.main_formulario_ingresar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Agrega este estilo para resaltar los mensajes de error */
+.error {
+    color: red;
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .titulo_formulario_ingresar h1{ 
-    font-size: 70px;
+/* Estilos que ya tenías */
+.formularioIngreso {
+    text-align: center;
+}
+
+.formularioIngreso h1 {
+    margin-bottom: 20px;
     color: var(--main-color);
-    margin-bottom: 30px;
-    
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .titulo_formulario_ingresar p{ 
+.formularioIngreso label {
     font-size: 20px;
+    font-weight: 500;
+}
+
+.formularioIngreso input {
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--main-color);
+    margin-top: 5px;
+    height: 35px;
+    width: 300px;
     text-align: center;
-    color: var(--text-color);
-    padding-bottom: 15px;
-    
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar {
-    justify-content: center;
+.formularioIngreso input:focus {
+    outline: none;
+    box-shadow: 3px 0pc 30px var(--main-color);
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar input{
-    margin-bottom: 10px;
-    border-radius: 5px;
-    height: 30px;
-    width: 310px;
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight:400;
-
-
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar i {
-    font-size: 30px;
-    align-self: center;
-    color: var(--main-color);
-    
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar  .olvide_Constraseña {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .olvide_Constraseña a{
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 20px;
-    align-self: center;
-    margin: 0 auto;
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .botonIngresar {
-    text-align: center;
-    
-}
-
-#botonIngresar {
-    font-size: 25px;
-    text-decoration: none;
-    color: var(--bg-color);
+.formularioIngreso button {
+    margin-top: 10px;
     background-color: var(--main-color);
-    border: 4px solid var(--text-color);
-    border-radius: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 3px;
-    padding-bottom: 3px; 
+    color: var(--bg-color);
+    font-size: 19px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.inputUsuarioIngreso, 
+.inputContraseñaUsuario {
+    margin-bottom: 10px;
 }
 
 /* Validación - formulario loging */

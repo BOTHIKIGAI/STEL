@@ -2,6 +2,7 @@
     --bg-color: #f2ebdc;
     --text-color: #0d0d0d;
     --main-color: #23518C;
+    --error-color: #a11129;
 }
 
 /* Menu Laterla */ 
@@ -12,4 +13,15 @@ body {
 
 
 /* Formulario creacion usuario */
+
+.error {
+    color: var(--error-color);
+}
+
+.resultadoEstadoinputUsuarioTipoResidente, .resultadoEstadoinputUsuarioNombreResidente,
+.resultadoEstadoinputUsuarioCedulaResidente, .resultadoEstadoinputUsuarioCelularResidente,
+.resultadoEstadoinputUsuarioEmailResidente, .resultadoEstadoinputUsuarioFechaNacimientoResidente,
+.resultadoEstadoinputUsuarioAndenResidente, .resultadoEstadoinputUsuarioNumeroCasaResidente {
+    margin-bottom: 10px;
+}
 

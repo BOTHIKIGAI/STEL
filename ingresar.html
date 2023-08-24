@@ -34,9 +34,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
             <!-- Google fonts nos permite usar caligrafias open source -->
         
-        <script src="2. JavaScript/0-validaciónFormularios/0-formularioLoging.js"></script>
-            <!-- JavaScript de validación para el formulario loging -->
-        
     </head>
 
     <!-- Header -->
@@ -85,9 +82,9 @@
 
                 <div class="formulario__grupo-input">
 
-                    <input type="email" class="formulario__input" name="usuario" id="usuario" placeholder="correo electronico...">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="correo electronico...">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                    <p class="formulario__input-error">El correo electronico ingresado no es correcto</p>
+                    <p class="formulario__input-error">El correo electronico es incorrecto</p>
 
                 </div>
 
@@ -104,7 +101,7 @@
 
                     <input type="password" class="formulario__input" name="password" id="password" placeholder="contraseña...">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                    <p class="formulario__input-error">La contraseña es incorrecta</p>
+                    <p class="formulario__input-error">La contraseña no es correcta</p>
 
                 </div>
 
@@ -126,30 +123,9 @@
 
 
         </form>
-        
-        
-        <!--
 
-        <form action="" class="formularioIngreso" id="formularioIngreso">
-
-            <h1>Inicio de sesión</h1>
-            <label for="usuarioIngreso">Correo <i class="fa-solid fa-user" style="color: #23518c;"></i></label>
-            <div class="inputUsuarioIngreso">
-                <input type="text" id="usuarioIngreso" name="usuarioIngreso" maxlength="30"><br><br>
-            </div>
-            
-            <label for="passIngreso">Contraseña <i class="fa-solid fa-key" style="color: #23518c;"></i></label>
-            <div class="inputContraseñaUsuario">
-                <input type="password" id="passIngreso" name="passIngreso"><br><br>
-            </div>
-
-            <p class="estadoIngreso"></p>
-
-            <button type="submit">Ingresar</button>
-
-        </form>
-
-        -->
+        <script src="/2. JavaScript/0-validaciónFormularios/0-formularioLoging.js"></script>
+            <!-- JavaScript de validación para el formulario loging -->
 
 
         <!-- Footer -->

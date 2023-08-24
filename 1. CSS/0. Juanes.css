@@ -980,7 +980,7 @@ footer .container .sec p {
 /* Validación - formulario loging */
 
 .formulario__grupo-correcto .formulario__validacion-estado{
-    color: var(--correcto-color);        
+    color: #1ed12d;     
     opacity: 1;
 }
 

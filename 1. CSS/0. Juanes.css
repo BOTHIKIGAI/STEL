@@ -13,6 +13,8 @@
     --bg-color: #f2ebdc;
     --text-color: #0d0d0d;
     --main-color: #23518C;
+    --error-color: #a11129;
+    --correcto-color: #1ed12d;
 }
 
 /* Barra de Navegación */
@@ -864,93 +866,137 @@ footer .container .sec p {
 
 /* Ingresar - Decima Parte - Formulario ingresar */
 
-/* Agrega este estilo para resaltar los mensajes de error */
-.error {
-    color: red;
-}
-
-/* Estilos que ya tenías */
-.formularioIngreso {
+.formulario {
     text-align: center;
 }
 
-.formularioIngreso h1 {
-    margin-bottom: 20px;
+.formulario h1 {
     color: var(--main-color);
+    padding-bottom: 10px;
+    font-size: 40px;
 }
 
-.formularioIngreso label {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.formularioIngreso input {
-    border-radius: 10px;
-    border-width: 5px;
-    border-color: var(--main-color);
-    margin-top: 5px;
-    height: 35px;
-    width: 300px;
-    text-align: center;
-}
-
-.formularioIngreso input:focus {
-    outline: none;
-    box-shadow: 3px 0pc 30px var(--main-color);
-}
-
-.formularioIngreso button {
+.formulario label {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 10px;
     margin-top: 10px;
+
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 250px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+    border: 3px solid var(--main-color);
+    transition: .3 ease all;
+}
+
+.formulario__input:focus {
+    -webkit-box-shadow: 0px 0px 86px -5px rgba(35,81,140,0.95);
+    -moz-box-shadow: 0px 0px 86px -5px rgba(35,81,140,0.95);
+    box-shadow: 0px 0px 86px -5px rgba(35,81,140,0.95);
+    outline: none;
+
+}
+
+.formulario__input-error {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none;
+
+}
+
+.formulario__input-error-activo {
+    display: block;
+
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 3px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
+
+}
+
+.formulario__mensaje {
+    color: var(--error-color);
+    font-weight: 500;
+    margin-top: 10px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+
+}
+
+.formulario__mensaje-activo {
+    display: block;
+
+}
+
+.formulario__grupo-btn-enviar {
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.formulario__btn {
+    height: 30px;
+    width: 150px;
     background-color: var(--main-color);
     color: var(--bg-color);
-    font-size: 19px;
-    width: 150px;
-    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 3px;
+    border: none;
+
 }
 
-.inputUsuarioIngreso, 
-.inputContraseñaUsuario {
-    margin-bottom: 10px;
+.formulario__btn:hover { 
+    transform: translateY(-3px);
+    animation: ease-in-out;
+
 }
 
 /* Validación - formulario loging */
 
-/* 1. Definir el mensaje de error */
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_input-error_usuario {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #23518C;
-    font-size: 20px;
-    display: none;
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: var(--correcto-color);        
+    opacity: 1;
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_input-error_usuario-activo { 
-    display: block;
+.formulario__grupo-incorrecto .formulario__label {
+    color: var(--error-color);
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .campo_formulario_ingresar_usuario {
-    color: red;
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: var(--error-color);
+    opacity: 1;
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_usuario:focus {
-    outline: none;
-    box-shadow: 3px 0pc 30px var(--main-color);
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid var(--error-color);
 }
 
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_passwoard:focus {
-    outline: none;
-    box-shadow: 3px 0pc 30px var(--main-color);
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_usuario_error input {
-    border: 3px solid #af2323;
-}
-
-.main_formulario_ingresar .cuerpo_formulario_ingresar .formulario_ingresar .campos_formulario_ingresar .formulario_grupo_input_passwoard_correcto input {
-    border: 3px solid #af2323;
-}
 
 /* Olvide contraseña - Inicio */
 

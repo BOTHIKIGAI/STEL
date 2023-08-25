@@ -927,7 +927,6 @@ footer .container .sec p {
 }
 
 .formulario__validacion-estado {
-    position: absolute;
     bottom: 5px;
     margin-left: 3px;
     z-index: 100;

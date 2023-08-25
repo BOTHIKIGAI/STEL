@@ -8,6 +8,12 @@ const expresiones = {
 
 }
 
+const campos = {
+    usuario: false,
+    password: false,
+}
+
+
 const validarFormulario = (e) => {
 
     switch (e.target.name) {
@@ -20,11 +26,7 @@ const validarFormulario = (e) => {
 
         case "password":
         
-            if (expresiones.contraseña.test()) {
-
-            } else {
-
-            }
+            validarCampo(expresiones.contraseña, e.target, 'password');    
 
         break;
 
@@ -39,8 +41,8 @@ const validarCampo = (expresion, input, campo) => {
 
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-		document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-xmark');
-		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-check');
+		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-xmark');
+		document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-check');
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		campos[campo] = true;
 
@@ -63,4 +65,20 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault(); 
+
+    if(campos.usuario && campos.password) {
+
+        formulario.reset();
+
+        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+            icono.classList.remove('formulario__grupo-correcto');
+        });
+
+    } else {
+
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        setTimeout(() => {
+			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+		}, 5000);
+    }
 });

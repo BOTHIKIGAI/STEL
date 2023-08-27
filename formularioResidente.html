@@ -114,164 +114,73 @@
             <div class="row align-items-start">
               
                 <div class="col">
+
+                    <form action="">
                 
-                    <H1 style="margin-bottom: 30px;">Registrar residente</H1>
+                        <H1 style="margin-bottom: 30px;">Registrar residente</H1>
 
-                    <hr>
+                        <hr>
 
-                    <form action="" class="formulario" id="formulario">
+                        <!-- Tipo de residente -->
 
-                        <!-- Tipo Residente -->
-                        <label for="tipoResidente" class="formulario__label">Tipo de Residente</label>
-                        <div class="formulario__grupo-input">
-                            
-                            <select id=tipoResidente class="formulario__input" name="tipoResidente">
-                                <option value="Residente-Propietario">Residente - Propietario</option>
-                                <option value="Residente-Propietario">Residente - Arrendatario</option>
-                                <option value="Residente-Propietario">Residente - Integrante</option>
-                            </select>
-                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        <label for="tipoResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Tipo de Residente</label>
+                        <select class="form-select" aria-label="Default select example" id="tipoResidente">
+                            <option selected>seleccionar...</option>
+                            <option value="Residente-Propietario">Residente - Propietario</option>
+                            <option value="Residente-Propietario">Residente - Arrendatario</option>
+                            <option value="Residente-Propietario">Residente - Integrante</option>
+                        </select>
 
-                        </div>
+                        <!-- Nombre residente -->
 
-                        <!-- Nombre -->
-                        <div class="formulario__grupo" id="grupo__nombre">
-
-                
-                            <label for="nombre" class="formulario__label">Nombre</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="text" class="formulario__input" name="nombre" id="nombre">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <p class="formulario__input-error">El nombre no es valido, solo debe contener letras</p>
-            
-                            </div>
-            
-                        </div>
+                        <label for="nombreResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Nombre de residente</label>
+                        <input type="text" class="form-control" id="nombreResidente" aria-describedby="nombreResidente" maxlength="35" placeholder="nombre...">
 
                         <!-- Cedula -->
-                        <div class="formulario__grupo" id="grupo__cedula">
 
-                
-                            <label for="cedula" class="formulario__label">Cedula</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="text" class="formulario__input" name="cedula" id="cedula">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <p class="formulario__input-error">Cedula no es valida, esta debe tener una longitud maxima de 11</p>
-            
-                            </div>
-            
-                        </div>
+                        <label for="celularResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Cedula...</label>
+                        <input type="number" class="form-control" id="celularResidente" aria-describedby="celularResidente" maxlength="35" placeholder="cedula...">
 
                         <!-- Celular -->
-                        <div class="formulario__grupo" id="grupo__celular">
 
-                
-                            <label for="celular" class="formulario__label">Celular</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="text" class="formulario__input" name="celular" id="celular">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <p class="formulario__input-error">Celular no valido, debe contener unicamente digitos y una longitud de 12</p>
-            
-                            </div>
-            
-                        </div>
+                        <label for="celularResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Celular...</label>
+                        <input type="number" class="form-control" id="celularResidente" aria-describedby="celularResidente" maxlength="35" placeholder="celular...">
 
-                        <!-- Correo electronico -->
-                        <div class="formulario__grupo" id="grupo__correo">
+                        <!-- Correo Electronico -->
 
-                
-                            <label for="correo" class="formulario__label">Correo electronico</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="text" class="formulario__input" name="correo" id="correo">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <p class="formulario__input-error">Correo no valido, unicamente se aceptan dominios de gmail, outlook, yahoo y hotmail</p>
-            
-                            </div>
-            
-                        </div>
+                        <label for="correoResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Correo electronico...</label>
+                        <input type="email" class="form-control" id="correoResidente" aria-describedby="correoResidente" maxlength="35" placeholder="correo...">
 
-                        <!-- Fecha nacimiento -->
-                        <div class="formulario__grupo" id="fechaNacimiento">
+                        <!-- Fecha de nacimiento -->
 
-                            <label for="fechaNacimiento" class="formulario__label">Fecha nacimiento</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="date" class="formulario__input" name="fechaNacimiento" id="fechaNacimiento">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            
-                            </div>
-            
-                        </div>
-
+                        <label for="fnacimientoResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fnacimientoResidente" aria-describedby="fnacimientoResidente" maxlength="35" placeholder="fecha de nacimiento">
 
                         <!-- Anden -->
-                        <div class="formulario__grupo" id="grupo__anden">
 
-                            <label for="anden" class="formulario__label">Anden</label>
-                        
-                            <div class="formulario__grupo-input">
-                        
-                                <select id="anden" class="formulario__input" name="anden" aria-label="Anden_Perteneciente">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
-
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                        
-                            </div>
-                        
-                        </div>
+                        <label for="andenResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Anden</label>
+                        <select class="form-select" aria-label="Default select example" id="andenResidente">
+                            <option selected>seleccionar...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
 
                         <!-- Casa -->
 
-                        <div class="formulario__grupo" id="grupo__casa">
-
-                
-                            <label for="casa" class="formulario__label">Casa</label>
-            
-                            <div class="formulario__grupo-input">
-            
-                                <input type="text" class="formulario__input" name="casa" id="casa">
-                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                                <p class="formulario__input-error">Numero de casa no valido</p>
-            
-                            </div>
-            
-                        </div>
-
-
-                        <div class="formulario__mensaje" id="formulario__mensaje">
-
-                            <p><i class="fa-solid fa-triangle-exclamation" style="color: #a11129;"></i> <b>Error: </b> Los datos ingresado son incorrectos </p>
-            
-                        </div>
-            
-                        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            
-                            <button type="submit" class="formulario__btn">Enviar</button>
-            
-                        </div>
+                        <label for="casaResidente" class="formulario__label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;">Numero de casa</label>
+                        <input type="text" class="form-control" id="casaResidente" aria-describedby="casaResidente" maxlength="35" placeholder="numero de casa...">
+                        
+                        <button type="button" class="btn btn-primary m-5 rounded-1 fs-4" style="background-color:#23518C; border: #23518C ;">Registrar</button>
 
                     </form>
-
-                    <script src="/2. JavaScript/0-validaciónFormularios/1-formularioResidente.js"></script>
               
                 </div>
               

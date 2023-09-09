@@ -122,37 +122,49 @@
 
                         <form action="">
 
-                            <!--Nombre guardiaSeguridad -->
+                            <!--Nombre -->
 
-                            <label for="nombreguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
-                            <input type="text" class="form-control" id="nombreguardiaSeguridad" aria-describedby="nombre_del_guardiaSeguridad" maxlength="35" placeholder="nombre...">
+                            <label for="nombreTrabajador" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C;" >Nombre</label>
+                            <input type="text" class="form-control" id="nombreTrabajador" aria-describedby="nombre_del_Trabajador" maxlength="35" placeholder="nombre...">
                             
-                            <!-- Cedula guardiaSeguridad -->
+                            <!-- Cedula -->
 
-                            <label for="cedulaguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
-                            <input type="tel" class="form-control" id="cedulaguardiaSeguridad" aria-describedby="cedula_del_guardiaSeguridad" maxlength="11" placeholder="cedula...">
+                            <label for="cedulaTrabajador" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Cedula</label>
+                            <input type="tel" class="form-control" id="cedulaTrabajador" aria-describedby="cedula_del_Trabajador" maxlength="11" placeholder="cedula...">
 
-                            <!-- Celular guardiaSeguridad -->
+                            <!-- Celular -->
 
-                            <label for="celularguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
-                            <input type="tel" class="form-control" id="celularguardiaSeguridad" aria-describedby="celular_del_guardiaSeguridad" maxlength="20" placeholder="celular...">
+                            <label for="celularTrabajador" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Celular</label>
+                            <input type="tel" class="form-control" id="celularTrabajador" aria-describedby="celular_del_Trabajador" maxlength="20" placeholder="celular...">
 
                             <!-- Email -->
 
-                            <label for="emailguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
-                            <input type="email" class="form-control" id="emailguardiaSeguridad" aria-describedby="email_del_guardiaSeguridad" maxlength="40" placeholder="correo electronico...">
+                            <label for="emailTrabajador" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Correo electronico</label>
+                            <input type="email" class="form-control" id="emailTrabajador" aria-describedby="email_del_Trabajador" maxlength="40" placeholder="correo electronico...">
 
                             <!-- Empresa -->
 
-                            <label for="emailguardiaSeguridad" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Empresa</label>
-                            <input type="email" class="form-control" id="emailguardiaSeguridad" aria-describedby="email_del_guardiaSeguridad" maxlength="40" placeholder="nombre de la empresa...">
+                            <label for="empresaTrabajador" class="form-label" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C" >Empresa</label>
+                            <input type="empresa" class="form-control" id="empresaTrabajador" aria-describedby="empresa_del_Trabajador" maxlength="40" placeholder="nombre de la empresa...">
 
-                            <!-- Contrato -->
+                            
+                            <!-- Tipo de trabajador -->
 
-                            <label for="andenguardiaSeguridad" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C">Tipo de contrato</label>
-                            <select id=andenguardiaSeguridad class="form-select" aria-label="Anden_Perteneciente" style="margin-bottom: 30px;">
+                            <label for="tipoTrabajador" style="margin-top: 15px; margin-bottom: 15px; font-weight: 700; color:#23518C">Tipo de trabajador</label>
+                            <select id=tipoTrabajador class="form-select" aria-label="contratro" style="margin-bottom: 30px;">
                                 
                                 <option>contrato...</option>
+                                <option value="Guardia de seguridad">Guardia de seguridad</option>
+                                <option value="Todero">Todero</option>
+                
+                            </select>
+                            
+                            <!-- Contrato -->
+
+                            <label for="contratoTrabajador" style="margin-bottom: 15px; font-weight: 700; color:#23518C">Tipo de contrato</label>
+                            <select id=contratoTrabajador class="form-select" aria-label="contratro" style="margin-bottom: 30px;">
+                                
+                                <option>tipo de trabajador...</option>
                                 <option value="Indefinido">Indefinido</option>
                                 <option value="Fijo">Fijo</option>
                                 <option value="Fijo">Prestación de Servicios</option>

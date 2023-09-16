@@ -68,7 +68,7 @@
                             <ul class="dropdown-menu">
 
                                 <li><a class="dropdown-item" href="administracionDocumentacion.html">Documentación</a></li>
-                                <li><a class="dropdown-item" href="multasSeccion.html">Multas</a></li>
+                                <li><a class="dropdown-item" href="multasSeccion.php">Multas</a></li>
                                 <li><a class="dropdown-item" href="carteraSeccion.html">Cartera</a></li>
                                 <li><a class="dropdown-item" href="visitantesSeccion.html">Vistantes</a></li>
                                 <li><a class="dropdown-item" href="resumenDatos.html">Resumen de datos</a></li>

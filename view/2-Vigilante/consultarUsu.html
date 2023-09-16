@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="shortcout icon" href="0. Imagenes/0. Logos/3. logo sin  nombre blanco.png">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" type="text/css" href="1. CSS/2. Modulos.css">
@@ -21,8 +21,9 @@
         <script src="2. JavaScript/modulos.js" defer></script>
 
     </head>
-    <body>
 
+    <body>
+    
         <!-- Menu lateral -->
 
         <nav class="navbar navbar-expand-lg" style="background-color: #23518C;">
@@ -111,71 +112,106 @@
 
         </nav>
 
-        <!-- Explicacion Usuarios -->
+        <!-- Resumen de datos personales -->
 
-        <div class="container d-text-center pt-2 ">
+        <div class="container pt-4">
 
-            
-            <div class="row justify-content-center">
-              
-                <div class="col">
+            <div class="row">
 
-                    <div class="card mx-auto" style="width: 20rem;">
+                <div class="col-4">
 
-                        <img src="0. Imagenes/13. consultarUsuario/usuarioConsultar.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                          
-                            <h5 class="card-title" style="text-align: center;">Residentes</h5>
-                            <hr>
-                            <p class="card-text" style="text-align: justify; margin-bottom:25px;">Los residentes son propietarios, arrendatarios e integrantes, los cuales se encuentran agrupados por anden y casa.</p>
-                        
-                        </div>
-                        
-                        <ul class="list-group list-group-flush">
-                          
-                            <a href="consultarUsuResidente.html" style="text-decoration: none; color: #ffffff; background-color:#45b373; border-radius: 3px; padding:10px; text-align: center;">Consultar</a>
-                        
-                        </ul>
-                      
-                    </div>
-              
+                    <img src="0. Imagenes/19. ResumenDatosUsuario/simbolUser.png" alt="" class="rounded">
+
                 </div>
-              
-                <div class="col">
 
-                    <div class="card mx-auto" style="width: 20rem;">
+                <div class="col ms-5">
 
-                        <img src="0. Imagenes/13. consultarUsuario/usuariosCreacionTrabajadores.jpg" class="card-img-top" alt="...">
-                        
-                        <div class="card-body">
-                          
-                            <h5 class="card-title" style="text-align: center;">Trabajadores</h5>
-                            <hr>
-                            <p class="card-text" style="text-align: justify;">Los trabajadores se distribuyen en tres roles, administrador/a, todero y guardia de seguridad. Cada uno cuanta con caracteristicas y permisos dentro del sistema.</p>
-                        
+                    <h1 style="color: #23518C;">Datos del Usuario</h1>
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-2" style="font-size: 18px; color: #23518C; font-weight: bold;">
+
+                            <p>ID: </p>
+                            <p>Nombre: </p>
+                            <p>Cedula: </p>
+                            <p>Celular: </p>
+                            <p>Correo: </p>
+                            <p>Empresa: </p>
+                            <p>Contrato: </p>
+
                         </div>
-                        
-                        <ul class="list-group list-group-flush">
-                          
-                            <a href="consultarUsuTrabajador.html" style="text-decoration: none; color: #ffffff; background-color:#b37a45; border-radius: 3px; padding:10px; text-align: center;">Consultar</a>
-                        
-                        </ul>
-                      
+
+                        <div class="col" style="font-size: 18px;">
+
+                            <p>1</p>
+                            <p>David Olaya</p>
+                            <p>5646544484</p>
+                            <p>356 365 3459</p>
+                            <p>david@gmail.com</p>
+                            <p>Seguridad LTA</p>
+                            <p>Indefinido</p>
+
+                        </div>
+
                     </div>
 
-              
+
                 </div>
-            
+
             </div>
-          
+
         </div>
 
-        <!-- Final Explicacion Usuarios -->
-        
+        <!-- Columnas resumen de datos por modulo -->
+
+        <div class="container d-text-center mt-5">
+
+            <h3 style="color: #23518C;">Novedades del trabajador</h3>
+            <hr>
+            <table id="example1" class="table table-striped" style="width:100%;">
+                <thead>
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Asunto</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td>Problema con residente</td>
+                        <td>2023-04-17</td>
+                        <td>Espera</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Solicitud almacen</td>
+                        <td>2023-03-24</td>
+                        <td>Espera</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>Cambio de jornada</td>
+                        <td>2023-05-10</td>
+                        <td>Solicitud Atendida</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>Permiso</td>
+                        <td>2023-05-10</td>
+                        <td>Solicitud Atendida</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     </body>
-    
+
 </html>

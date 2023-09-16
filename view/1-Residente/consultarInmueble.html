@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="shortcout icon" href="0. Imagenes/0. Logos/3. logo sin  nombre blanco.png">
-        
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" type="text/css" href="1. CSS/2. Modulos.css">
@@ -21,8 +21,9 @@
         <script src="2. JavaScript/modulos.js" defer></script>
 
     </head>
-    <body>
 
+    <body>
+    
         <!-- Menu lateral -->
 
         <nav class="navbar navbar-expand-lg" style="background-color: #23518C;">
@@ -111,68 +112,209 @@
 
         </nav>
 
-        <!-- Tablas -->
+        <!-- Resumen de datos personales -->
 
-        <div style="margin-left: 100px; margin-right: 100px; margin-top: 20px;">
+        <div class="container pt-4">
 
-            <table id="example" class="table table-striped" style="width:100%;">
-                <thead>
-                    <tr>
-                        <th>Anden</th>
-                        <th>Casa</th>
-                        <th>Numero de Propietarios</th>
-                        <th>Numero de Residentes</th>
-                        <th>Numero de Mascotas</th>
-                        <th>Numero de Integrantes</th>
-                        <th>Consultar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td><a href="resumenDatosInmueble.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 10px; border-radius: 10px; margin:5px;">consultar</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>32</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td><a href="resumenDatosInmueble.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 10px; border-radius: 10px; margin:5px;">consultar</a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>124</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td><a href="resumenDatosInmueble.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 10px; border-radius: 10px; margin:5px;">consultar</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>64</td>
-                        <td>2</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td><a href="resumenDatosInmueble.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 10px; border-radius: 10px; margin:5px;">consultar</a></td>
-                    </tr>
-        
-                </tbody>
-            </table>
+            <div class="row">
+
+                <div class="col-4">
+
+                    <img src="0. Imagenes/20. ResumenDatosCasa/perfilCasa.png" alt="" class="rounded">
+
+                </div>
+
+                <div class="col ms-5">
+
+                    <h1 style="color: #23518C;">Datos del Inmueble</h1>
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-4" style="font-size: 18px; color: #23518C; font-weight: bold;">
+
+                            <p>Anden: </p>
+                            <p>Casa: </p>
+                            <p>Estado: </p>
+                            <p># de Propietarios: </p>
+                            <p># de Arrendatarios: </p>
+                            <p># de Integrantes: </p>
+
+                            <button type="button" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#editarDatos" style="background-color: #23518C; border: #23518C; color: white;"> Cambiar estado inmueble </button>
+
+                            <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="editarDatosLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="editarDatosLabel">Editar</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" >
+
+                                            <form action="" style="color: black; font-weight: 400; font-size: 16px;">
+                                            
+                                                <p>Cambiar el estado del inmueble implcara el acceso o no acceso a las diferentes caracteristicas del sistema de información.</p>
+                                                <p>Ejemplo: Un inmueble en mora no permite el acceso a la documentación del inmueble </p>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn" style="background-color: #a11129; border: #a11129; color: white;">Realizar cambios</button>
+                                                </div>
+
+                                            </form>
+
+                                        </form>
+
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+
+                        <div class="col" style="font-size: 18px;">
+
+                            <p>1</p>
+                            <p>10</p>
+                            <p>Paz y Salvo</p>
+                            <p>1</p>
+                            <p>3</p>
+                            <p>2</p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
 
         </div>
+
+        <!-- Columnas resumen de datos por modulo -->
+
+        <div class="container d-text-center mt-5">
+
+            <div class="row justify-content-center pb-5">
+
+                <div class="col">
+
+                    <h3 style="color: #23518C;">Residentes</h3>
+                    <hr>
+                    <table id="example" class="table table-striped" style="width:100%;">
+                        <thead>
+                            <tr>
         
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Tipo de residente</th>
+                                <th>Consultar</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>Kelly Johana Diaz</td>
+                                <td>Propietario</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>David Olaya</td>
+                                <td>Arrendatario</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>Milanesa Morera</td>
+                                <td>Arrendatario</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>Juan Esteban Cajiao</td>
+                                <td>Arrendatario</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>Pedrito de la cumbre</td>
+                                <td>Integrante</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Miguel del Sol</td>
+                                <td>Integrante</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>Luis del Toro</td>
+                                <td>Integrante</td>
+                                <td><a href="resumenDatosPerfil.html" style="background-color: #23518C; text-decoration: none; color:#f2ebdc; padding: 5px; border-radius: 10px; margin:5px;">Consultar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 style="color: #23518C;">Multas</h3>
+                    <hr>
+                    <table id="example1" class="table table-striped" style="width:100%;">
+                        <thead>
+                            <tr>
+        
+                                <th>ID</th>
+                                <th>Tipo de multa</th>
+                                <th>Estado</th>
+                                <th>Fecha y hora</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>Mascota sin correa</td>
+                                <td>Pago</td>
+                                <td>2022-05-15 14:13:00</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Ruido Excesivo</td>
+                                <td>Pago</td>
+                                <td>2023-01-05 14:44:00</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>No recoger excrementos</td>
+                                <td>Pago</td>
+                                <td>2023-04-23 09:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>Estacionamiento indebido</td>
+                                <td>Pago</td>
+                                <td>2023-01-27 23:00:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     </body>
-    
-</html>
+
+</html

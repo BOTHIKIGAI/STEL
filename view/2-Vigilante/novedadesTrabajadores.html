@@ -75,7 +75,6 @@
 
                             <ul class="dropdown-menu">
 
-                                <li><a class="dropdown-item" href="cuposParqueadero.html">Cupos parqueadero</a></li>
                                 <li><a class="dropdown-item" href="movimientoVehiculo.html">Entrada y Salida</a></li>
                                 <li><a class="dropdown-item" href="configuracionAlquiler.html">Configuración</a></li>
 

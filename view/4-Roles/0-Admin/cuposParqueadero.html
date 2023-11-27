@@ -84,6 +84,7 @@
                                 <li><a class="dropdown-item" href="cuposParqueadero.html">Cupos parqueadero</a></li>
                                 <li><a class="dropdown-item" href="movimientoVehiculo.html">Entrada y Salida</a></li>
                                 <li><a class="dropdown-item" href="configuracionAlquiler.html">Configuración</a></li>
+                                <li><a class="dropdown-item" href="datosParqueadero.html">Datos parqueadero</a></li>
 
                              </ul>
 
@@ -116,18 +117,70 @@
 
         <!-- Tablas disponibilidad parqueaderos -->
 
+        <div class="container d-text-center pt-4">
+
+            <div class="row align-items-start">
+
+                <div class="col">
+
+                    <h2>Cupos Parqueaderos</h2>
+                    <hr>
+                    
+                    <form action="">
+
+                        <label for="numParqueadero" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Numero de parqueadero</label>
+                        <input type="number" class="form-control" id="numParqueadero" aria-describedby="numParqueadero" placeholder="numero de parqueadero...">
+
+                        <label for="numeroInmueble" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Numero del inmueble</label>
+                        <input type="number" class="form-control" id="numeroInmueble" aria-describedby="numeroInmueble" placeholder="numero del inmueble...">
+
+                        <label for="numeroPlaca" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Numero de la placa</label>
+                        <input type="text" class="form-control" id="numeroPlaca" placeholder="numero de la placa...">
+
+                        <label for="tipoVehiculo" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de vehiculo</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione el tipo de vehiculo</option>
+                            <option value="1">Carro</option>
+                            <option value="2">Moto</option>
+                        </select>
+
+                        <label for="nombreResidenteCupoParqueadero" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color: #23518C;">Nombre del residente</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Residente...</option>
+                            <option value="Juan Esteban Cajiao Madero">Juan Esteban Cajiao Madero</option>
+                            <option value="David Santiago Olaya">David Santiago Olaya</option>
+                            <option value="Kelly Johana Diaz Robleado">Kelly Johanna Diaz Robleado</option>
+                        </select>
+
+                        <button type="button" class="btn mt-4" style="background-color: #23518C; color: white;">Guardar</button>
+
+                    </form>
+
+                </div>
+
+                <div class="col">
+                    
+                    <img src="/view/0. Imagenes/22. Cupo parqueaderos/ParqueaderoCupos.jpg" alt="" style="border-radius: 10px; margin-left: 90px; margin-top: 20px;">
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <!-- Tabla de parqueaderos -->
+
         <div style="margin-left: 115px; margin-right: 115px; margin-top: 20px; margin-bottom: 25px;">
 
-            <h2>Cupos Parqueaderos</h2>
-            <hr>
-
+            <hr class="mt-5">
             <table id="example" class="table table-striped" style="width:100%;">
                 <thead>
                     <tr>
 
                         <th>Num. Parqueadero</th>
-                        <th>Tipo de parqueadero</th>
                         <th>Estado</th>
+                        <th>Tipo de vehiculo</th>
                         <th>Usado por...</th>
 
                     </tr>
@@ -135,36 +188,36 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Parqueadero comunal</td>
                         <td>Ocupado</td>
+                        <td>Carro</td>
                         <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
 
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Parqueadero Visitante</td>
                         <td>Libre</td>
+                        <td>Carro</td>
                         <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
 
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Parqueadero Comunal</td>
                         <td>Ocupado</td>
+                        <td>Carro</td>
                         <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
 
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Parqueadero comunal</td>
                         <td>Ocupado</td>
+                        <td>Moto</td>
                         <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
 
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Parqueadero comunal</td>
                         <td>Libre</td>
+                        <td>Moto</td>
                         <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
 
                     </tr>
@@ -189,6 +242,7 @@
                                                     <p>Casa: </p>
                                                     <p>Telefono/Celular: </p>
                                                     <p>Parqueadero: </p>
+                                                    <p>Placa: </p>
 
                                                 </div>
 
@@ -198,6 +252,7 @@
                                                     <p>10</p>
                                                     <p>345 221 4504</p>
                                                     <p>4</p>
+                                                    <p>ACB123</p>
 
                                                 </div>
 

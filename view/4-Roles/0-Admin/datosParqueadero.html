@@ -117,102 +117,97 @@
 
         <!-- Tablas disponibilidad parqueaderos -->
 
-        <div class="container d-text-center pt-4">
+        <div style="margin-left: 115px; margin-right: 115px; margin-top: 20px; margin-bottom: 25px;">
 
-            <div class="row align-items-start">
+            <!-- Titulo -->
+            <h2>Datos parqueadero</h2>
+            <hr class="mb-5">
 
-                <div class="col">
+            <!-- Graficos parqueadro -->
+            <div class="container text-center d-flex align-items-center justify-content-center">
 
-                    <h2>Movimiento vehiculo</h2>
-                    <hr>
-                    
-                    <form action="">
-
-                        <label for="numParqueadero" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Numero de parqueadero</label>
-                        <input type="number" class="form-control" id="numParqueadero" aria-describedby="numParqueadero" placeholder="numero de parqueadero...">
-
-                        <label for="tipoVehiculo" style="margin-top: 15px; margin-bottom: 10px; font-weight: 700; color:#23518C">Tipo de movimiento</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione el tipo de vehiculo</option>
-                            <option value="1">Entrada residente</option>
-                            <option value="1">Entrada alquiler</option>
-                            <option value="2">Salida</option>
-                        </select>
-
-                        <button type="button" class="btn mt-4" style="background-color: #23518C; color: white;">Guardar</button>
-
-                    </form>
-
-                </div>
-
-                <div class="col">
-                    
-                    <img src="/view/0. Imagenes/23. MovimientoVehiculo/vehiculoSaliendo.jpeg" alt="" style="border-radius: 10px; margin-left: 90px; margin-top: 20px; width: 500px;">
-
-                    <div style="margin-top: 10px; text-align: center;">
-
-                        <hr class="">
-                        <a href="#ParqueaderoOcupadoSeccion" style="text-decoration: none; color: #23518C; font-weight: bold;"><p>Parqueaderos Ocupados <i class="bi bi-arrow-bar-right"></i></p></a>
-                        <a href="#ParqueaderoLibreSeccion" style="text-decoration: none; color: #23518C; font-weight: bold;"><p>Parqueaderos Libres <i class="bi bi-arrow-bar-right"></i></p></a>
-
+                <div class="row">
+        
+                    <div class="col mb-3">
+                        <div class="card text-bg-dark" style="max-width: 18rem;">
+                            <div class="card-header">Parqueaderos <i class="bi bi-p-circle"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Numero total</h5>
+                                <h6 class="card-title">150</h6>
+                                <p class="card-text">Total de parqueaderos en el conjunto residencial</p>
+                            </div>
+                        </div>
                     </div>
-
+        
+                    <div class="col mb-3">
+                        <div class="card text-bg-dark" style="max-width: 18rem;">
+                            <div class="card-header">Parqueaderos para carros <i class="bi bi-car-front"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Numero total</h5>
+                                <h6 class="card-title">130</h6>
+                                <p class="card-text">Total de parqueaderos en el conjunto residencial</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col mb-3">
+                        <div class="card text-bg-dark" style="max-width: 18rem;">
+                            <div class="card-header">Parqueaderos motos <i class="bi bi-bicycle"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Numero total</h5>
+                                <h6 class="card-title">20</h6>
+                                <p class="card-text">Total de parqueaderos en el conjunto residencial</p>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
-                
-
+        
             </div>
 
-        </div>
+            <hr class="mt-5">
 
-        <!-- Tabla de parqueaderos ocupados -->
-
-        
-
-        <div style="margin-left: 115px; margin-right: 115px; margin-top: 40px; margin-bottom: 25px;">
-
-            <hr>
-            <h3 id="ParqueaderoOcupadoSeccion" class="mb-5">Parqueadero Ocupado <i class="bi bi-sign-no-parking-fill" style="color: #23518C;"></i></h3> 
-
+            <!-- Tabla Distribución parqueadero por bloques de apartamentos-->
             <table id="example" class="table table-striped" style="width:100%;">
                 <thead>
                     <tr>
-
-                        <th>Num. Parqueadero</th>
-                        <th>Tipo de vehiculo</th>
-                        <th>Usado por...</th>
-
+                        <th>Bloque</th>
+                        <th>Numero de parqueaderos ocupados</th>
+                        <th>Parqueadero carros</th>
+                        <th>Parqueadro motos</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
+                        <td>30</td>
+                        <td>20</td>
+                        <td>10</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>10</td>
 
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
+                        <td>50</td>
+                        <td>30</td>
+                        <td>20</td>                        
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Moto</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
+                        <td>10</td>
+                        <td>10</td>
+                        <td>0</td>                        
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Moto</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
+                        <td>40</td>
+                        <td>30</td>
+                        <td>10</td>                        
                     </tr>
 
                             <!-- Modal -->
@@ -235,7 +230,6 @@
                                                     <p>Casa: </p>
                                                     <p>Telefono/Celular: </p>
                                                     <p>Parqueadero: </p>
-                                                    <p>Placa: </p>
 
                                                 </div>
 
@@ -245,7 +239,6 @@
                                                     <p>10</p>
                                                     <p>345 221 4504</p>
                                                     <p>4</p>
-                                                    <p>ACB123</p>
 
                                                 </div>
 
@@ -264,101 +257,7 @@
                 </tbody>
             </table>
 
-            <!-- Tabla parqueaderos libres -->
-            <hr>
-            <h3 id="ParqueaderoLibreSeccion" class="mb-5">Parqueadero Libre <i class="bi bi-p-circle-fill" style="color: #23518C;"></i></h3> 
 
-            <table id="example1" class="table table-striped" style="width:100%;">
-                <thead>
-                    <tr>
-
-                        <th>Num. Parqueadero</th>
-                        <th>Tipo de vehiculo</th>
-                        <th>Usado por...</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Carro</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Moto</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Moto</td>
-                        <td><button type="button" class="btn" style="background-color: #23518C; color: white;" data-bs-toggle="modal" data-bs-target="#consultarUso">Consultar</button></td>
-
-                    </tr>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="consultarUso" tabindex="-1" aria-labelledby="consultarUsoParqueadero" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="consultarUsoParqueadero" style="color: #23518C;">Uso de parqueadero</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        
-                                        <div class="container">
-
-                                            <div class="row">
-
-                                                <div class="col" style="color: #23518C; font-weight: bold;">
-
-                                                    <p>Nombre: </p>
-                                                    <p>Casa: </p>
-                                                    <p>Telefono/Celular: </p>
-                                                    <p>Parqueadero: </p>
-                                                    <p>Placa: </p>
-
-                                                </div>
-
-                                                <div class="col">
-
-                                                    <p>Juan Esteban Cajiao Madero </p>
-                                                    <p>10</p>
-                                                    <p>345 221 4504</p>
-                                                    <p>4</p>
-                                                    <p>ACB123</p>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                    
-                </tbody>
-            </table>
-            <hr>
 
         </div>
 
